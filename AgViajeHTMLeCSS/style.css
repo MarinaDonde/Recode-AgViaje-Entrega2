@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+:root {
+    --cor0: #0818E0;
+    --cor1: #0253F7;
+    --cor2: #028EED;
+    --cor5: rgb(56, 54, 54);
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 40px;
+    color: var(--cor1);
+    font-size: 2em;
+    font-family: 'Readex Pro', sans-serif;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.268);
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+h3{
+    font-family: 'Readex Pro', sans-serif;
+    color: var(--cor1);
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+/*Navbar*/
+
+#menu {
+    background-color: var(--cor0);
+    max-width: 1920px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.309);
+}
+
+#menu ul{
+    max-width: 1000px;
+    display: flex;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{
+    color: #FFFFFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none; 
+    font-family: 'Readex Pro', sans-serif; 
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.268);  
+}
+
+#menu ul li a:hover{
+    background-color: var(--cor2);
+    transition: background .5s;
+}
+
+/*Home*/
+
+.banner {
+    width: 100%;
+    margin-bottom: 0;
+}
+section{
+    max-width: 1000px; 
+}
+
+.texto {
+    text-align: justify;
+    padding: 20px;
+    font-size: 1.2em;
+    color: var(--cor5); 
+}
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*Destinos e Promoções*/
+
+.destinos{
+   padding: 15px 15px 40px;
+   border: 2px solid var(--cor1);
+   border-radius: 8px;
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.248);
+}
+
+.destinos:hover{
+    background-color:rgba(100, 153, 202, 0.248);
+    transition: background .5s;
+}
+
+.photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.promo {
+    text-decoration: line-through;
+    color: red;
+}
+
+/*Contato*/
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnformulario {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: var(--cor2);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    align-items: center;
+    font-size: 1.2em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.248);
+    cursor: pointer;
+}
+
+label {
+    text-align: right;
+    padding: 10px;
+    font-family: 'Readex Pro', sans-serif;
+    color: var(--cor5);
+}
+
+input {
+    padding: 5px;
+    width: 300px;
+    border-radius: 8px;
+    border-color: (var(--cor5));
+}
+
+form{
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+/*Pop-up Contato*/
+
+.popup-wrapper {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 30% auto;
+    padding: 50px;
+    background: var(--cor1);
+    position: relative;
+    border: 10px solid var(--cor0);
+    border-radius: 10px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+footer {
+    background-color: var(--cor0);
+}
+
+.rodape {
+    margin-bottom: 50px;
+}
+
+
+#rodape {
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 20px;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 700px) {
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu ul li a {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+

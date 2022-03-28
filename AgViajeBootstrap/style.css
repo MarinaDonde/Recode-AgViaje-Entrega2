@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+:root {
+    --cor0: #0818E0;
+    --cor1: #0253F7;
+    --cor2: #028EED;
+    --cor5: rgb(56, 54, 54);
+}
+
+h1{
+    text-align: center;
+    padding: 40px;
+    color: var(--cor1);
+    font-size: 2em;
+    font-family: 'Readex Pro', sans-serif;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    font-family: 'Readex Pro', sans-serif;
+    color: var(--cor1);
+    font-size: 1.2em;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+button {
+    margin: 30px 0px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.467);
+}
+
+nav {
+    background-color: var(--cor0);
+}
+
+/*Home*/
+
+.banner {
+    width: 100%;
+}
+
+section{
+    max-width: 1000px; 
+}
+.nav-link:hover{
+    background-color: var(--cor0);
+    transition: background .5s;
+}
+
+.texto {
+    text-align: justify;
+    font-size: 1.2em;
+    color: var(--cor5);
+    margin: 10px 50px; 
+}
+
+.ultimo-parag {
+    margin-bottom: 30px;
+}
+
+/*Destinos e Promoções*/
+
+.box{
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.destinos{
+    padding: 15px 15px 40px;
+    border: 2px solid var(--cor1);
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.248);
+ }
+
+ .destinos:hover{
+     background-color:rgba(100, 153, 202, 0.248);
+     transition: background .5s;
+ }
+ 
+ .photo {
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+ }
+
+ .promo {
+     text-decoration: line-through;
+     color: red;
+ }
+
+/*Contato*/
+
+.btn {
+    background-color: var(--cor2);
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+/*Footer*/
+
+.rodape{
+    background-color: var(--cor0);
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 0px;
+}  
+

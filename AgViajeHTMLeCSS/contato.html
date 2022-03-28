@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/89f00e9e8e.js" crossorigin="anonymous"></script>
+    <title>Viaje!</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="promocoes.html">Promoções</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <div class="social-media">
+                <li><a href="https://www.facebook.com/" target="_blank"><p><i class="fab fa-facebook-square"></i></p></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><p><i class="fab fa-instagram"></i></p></a></li>
+            </div>
+            <li><a href="contato.html"><p><i class="fas fa-phone-alt"></i>  0800 0000</p></a></li>
+        </ul> 
+     </nav>
+     <h1>Entre em Contato:</h1>
+     <form>
+         <div>
+            <div class="formulario">
+                <label>Nome:</label>
+                <input type="text" placeholder="Digite seu nome" name="nome" required/>
+            </div>
+            <div class="formulario">
+                <label>Telefone:</label>
+                <input type="text" placeholder="Digite seu telefone" name="telefone" required/>
+            </div>
+            <div class="formulario">
+                <label>Email:</label>
+                <input type="text" placeholder="Digite seu email" name="email" required/>
+            </div>
+            <div class="formulario">
+                <label>Destino:</label>
+                <input type="text" placeholder="Digite o nome da cidade" name="email" required/>
+            </div>
+            <button id="pqp" class="btnformulario">Enviar</button>
+        </div>  
+     </form>
+     <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close">x</div>
+            <div class="popup-content">
+                <h2>Obrigado pelo Contato!</h2>
+            </div>
+        </div>
+    </div>
+     <img src="Imagens/banner1.jpg" alt="Monumentos Mundiais" class="banner">
+     <footer>
+        <p id="rodape">2021 Agência Viaje! - Todos os direitos reservados.</p>
+    </footer>
+    <script src="popup.js"></script>
+</body>
+</html>
